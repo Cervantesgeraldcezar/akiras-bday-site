@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Letters</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="letters-container">
+    <img src="./photo/Akira.jpg" alt="Birthday Girl" class="profile-pic">
+
+    <h2 id="welcome"></h2>
+
+ <div class="buttons-grid">
+  <div class="row">
+    <button onclick="showLetter('begin')">Where it all began</button>
+    <button onclick="showLetter('serotonin')">Dosage of serotonin</button>
+    <button onclick="showLetter('ups')">Ups and downs</button>
+  </div>
+
+  <div class="row">
+    <button onclick="showLetter('reminders')">Reminders to you</button>
+    <button onclick="showLetter('words')">Words I wanna say</button>
+    <button onclick="showLetter('wishes')">18 wishes</button>
+    <button onclick="showLetter('final')">Final note</button>
+  </div>
+</div>
+
+
+
+    <!-- Popup modal -->
+<div id="letterModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p id="letterText"></p>
+  </div>
+</div>
+
+  </div>
+</body>
+<script src="letters.js"></script>
+
+</html>
